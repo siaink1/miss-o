@@ -22,3 +22,21 @@ const perguntas - [
             "alternativa1","alternativa2"
     }
 ]
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta(){
+    for(const alternativa of perguntaAtual.alternativas) { 
+    const botaoAlternativas = document.createElement("button");
+    botaoAlternativas.textContent = alternativa;
+    caixaAlternativas.appendChild(botaoAlternativas); 
+   
+    mostraAlternativas();
+}
+}
+
+function mostraAlternativas(){
+
+}
+mostraPergunta();
